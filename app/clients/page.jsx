@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Button } from "../../Components/ui/button";
-import { Input } from "../../Components/ui/input";
-import { Checkbox } from "../../Components/ui/checkbox";
+import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
+import { Checkbox } from "../../components/ui/checkbox";
 import {
   Table,
   TableBody,
@@ -10,7 +10,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "../../Components/ui/table";
+} from "../../components/ui/table";
 
 const mockData = [
   {
