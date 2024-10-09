@@ -1,3 +1,4 @@
+import { Sidebar } from "@/components/sidebar/Sidebar";
 import "./globals.css";
 export const metadata = {
   title: "Create Next App",
@@ -8,7 +9,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body >
-        {children}
+        <div className={`flex h-screen overflow-hidden`}>
+          {/* ===== Sidebar Start ===== */}
+          <div>
+            <Sidebar />
+          </div>
+          <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
+            {/* ===== Main Content Start ===== */}
+            <main className="relative">
+              <div className="mx-auto ">{children}</div>
+            </main>
+            {/* ===== Main Content End ===== */}
+          </div>
+        </div>
       </body>
     </html>
   );

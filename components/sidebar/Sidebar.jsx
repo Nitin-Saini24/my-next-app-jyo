@@ -4,6 +4,7 @@ import { TbSmartHome } from "react-icons/tb";
 import { AiOutlineUserSwitch } from "react-icons/ai";
 import { usePathname } from "next/navigation";
 import { TiMessages } from "react-icons/ti";
+import user01 from "../../public/assets/user-01.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,7 +12,7 @@ export const Sidebar = () => {
   const pathname = usePathname();
   const isActive = pathname;
   return (
-    <div className="bg-white h-screen p-4  absolute left-0 top-0 z-[9999] flex flex-col items-center">
+    <div className="bg-white h-screen p-4  left-0 top-0 z-[9999] flex flex-col items-center">
       <nav
         className="border h-[100%] inline-block
        rounded-full w-16  bg-gray-100 shadow-lg overflow-y-auto no-scrollbar"
@@ -78,7 +79,7 @@ export const Sidebar = () => {
               <TiMessages className=" md:w-5 md:h-5 text-gray-400" />
             </span>
             <span className="h-10 w-10 rounded-full">
-              {/* <Image src={user01} alt="Dashboard Icon" /> */}
+              <Image src={user01} alt="Dashboard Icon" />
             </span>
           </div>
         </aside>
