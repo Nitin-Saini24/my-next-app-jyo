@@ -26,7 +26,7 @@ export const Sidebar = () => {
                   : "my-3"
               }
             >
-              <Link href="dashboard">
+              <Link href="/dashboard">
                 <TbSmartHome
                   className={`md:w-6 md:h-6  ${
                     isActive === "/dashboard"
@@ -43,7 +43,7 @@ export const Sidebar = () => {
                   : "my-3"
               }
             >
-              <Link href="clients">
+              <Link href="/clients">
                 <AiOutlineUserSwitch
                   className={`md:w-6 md:h-6  ${
                     isActive === "/clients"
@@ -60,7 +60,7 @@ export const Sidebar = () => {
                   : "my-3"
               }
             >
-              <Link href="messages">
+              <Link href="/messages">
                 <TiMessages
                   className={`md:w-6 md:h-6  ${
                     isActive === "/messages"
