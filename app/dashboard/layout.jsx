@@ -11,7 +11,7 @@ import {
 } from "../../components/ui/breadcrumb";
 import { usePathname } from "next/navigation";
 
-export default function layout({ children }) {
+export default function Layout({ children }) {
   const pathname = usePathname(); // Correct hook to get the current route
 
   const pathSegments = pathname.split("/").filter((segment) => segment !== "");
